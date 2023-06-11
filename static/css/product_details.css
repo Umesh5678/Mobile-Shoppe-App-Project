@@ -1,0 +1,157 @@
+
+
+/*product details*/
+
+
+#product{
+    margin: 50px 100px;
+    
+  }
+  
+  #productl a{
+    text-decoration: none;
+    color: black;
+  }
+  
+  .productl-img{
+    width: 100%;
+    height: 700px;
+    margin-top: 70px;
+   
+    border-bottom: none;
+    margin-bottom: 50px;
+  }
+  #productr{
+    padding-left: 30px;
+  }
+  
+  #productr a{
+    text-decoration: none;
+    color: black;
+    float: right;
+    
+  }
+  #productr h3{
+    margin-top: 80px;
+  }
+
+  #quantity{
+    padding: 5px 10px;
+    border: 1px solid rgb(146, 142, 142);
+    margin-top: 10px;
+  }
+  
+.cartbtn{
+    margin-top: 10px;
+    width: 100%;
+    padding: 9px ;
+    margin-bottom: 10px;
+    background: rgb(146, 36, 209);
+     /* Black see-through */
+    border: 0px solid rgb(146, 36, 209);
+    transition:.4s ease;
+    color: white;
+  }
+  
+  
+  
+.cartbtn:hover{
+    background-color: rgb(125, 107, 204);
+    color: rgb(226, 220, 220);
+  }
+
+.buybtn{
+    margin-top: 10px;
+    width: 100%;
+    padding: 9px ;
+    margin-bottom: 10px;
+    background: black;
+     /* Black see-through */
+    border: 0px solid black;
+    transition:.4s ease;
+    color: white;
+  }
+  
+.buybtn:hover{
+    opacity: 0.5;
+  }
+
+  
+.social_media{
+    list-style-type: none;
+    padding-right:  10px;
+
+  }
+  
+
+ 
+
+
+
+
+
+
+  /*accordion body*/
+
+
+ 
+  .accordion {
+    width: 350px;
+    
+    color: black;
+    background-color: white;
+    padding-top: 30px;
+    
+  }
+  
+  
+  
+  .accordion .label {
+    position: relative;
+    padding-bottom: 10px;
+    font-size: 17px;
+    color: black;
+    cursor: pointer;
+  }
+
+  .accordion .label:hover{
+    opacity: 0.5;
+  }
+  
+  .accordion .label::before {
+    content: '+';
+    color: black;
+    position: absolute;
+    top: 50%;
+    right: -5px;
+    font-size: 30px;
+    transform: translateY(-50%);
+  }
+  
+  .accordion .content {
+    
+    background: white;
+    height: 0;
+    font-size: 15px;
+    text-align: justify;
+    width: 320px;
+    overflow: hidden;
+    transition: 0.5s;
+  }
+  
+  .accordion hr {
+    width: 100;
+    margin-left: 0;
+    border: 1px solid rgb(15, 8, 8);
+  }
+  
+  .accordion .container.active .content {
+    height: 150px;
+  }
+  
+  .accordion .container.active .label::before {
+    content: '-';
+    font-size: 30px;
+  }
+
+

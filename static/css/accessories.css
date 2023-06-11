@@ -1,0 +1,182 @@
+
+
+
+/*tablets section start*/
+
+.accessories{
+    
+    
+    padding: 0px 100px;
+   
+}
+
+
+
+.accessories h1{
+    font-size: 50px;
+    font-weight: 900;
+    color: black;
+    margin-bottom: 20px;
+    font-family: 'Kanit', sans-serif;
+}
+.accessories-hr{
+  border: 2px solid ;
+  width: 70%;
+  margin-left: 30%;
+  margin-top: -40px;
+}
+
+
+
+  /*accordion body*/
+
+
+ 
+  .accordion {
+    width: 240px;
+    
+    color: black;
+    background-color: none;
+    
+    
+  }
+  
+  
+  
+  .accordion .label {
+    position: relative;
+    padding-bottom: 10px;
+    font-size: 16px;
+    color: black;
+    cursor: pointer;
+    text-align: start;
+  }
+
+  
+  
+  .accordion .label::before {
+    content: '+';
+    color: black;
+    position: absolute;
+    top: 50%;
+    right: -5px;
+    font-size: 30px;
+    transform: translateY(-50%);
+  }
+  
+  .accordion .content {
+    
+    background: none;
+    height: 0;
+    font-size: 15px;
+    text-align: start;
+    width: 230px;
+    overflow: hidden;
+    transition: 0.5s;
+  }
+
+  .accordion .content ul li {
+    margin-bottom: 10px;
+    margin-left: -30px;
+
+  }
+  
+  
+  
+  .accordion .container.active .content {
+    height: 150px;
+  }
+  
+  .accordion .container.active .label::before {
+    content: '-';
+    font-size: 30px;
+  }
+
+  .button-value{
+    border: none;
+    background: none;
+  }
+  
+ 
+ 
+/* 
+  #products {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-column-gap: 30px;
+    padding: 2em 0;
+  }
+  .card {
+    background-color: rgb(240, 244, 250);
+    max-width: 18em;
+    margin-top: 1em;
+    margin-bottom: 50px;
+    border: none;
+    
+  }
+  .image-container {
+    text-align: center;
+  }
+ img {
+    width: 196px; height:261;
+    object-fit: contain;
+    
+    
+  }
+  
+  .container {
+    padding-top: 1em;
+    color: #110f29;
+  }
+  .container h6 {
+    font-weight: 700;
+  }
+  .hide {
+    display: none;
+  }
+  @media screen and (max-width: 720px) {
+    img {
+      max-width: 100%;
+      object-fit: contain;
+      height: 10em;
+    }
+    .card {
+      max-width: 10em;
+      margin-top: 1em;
+    }
+    #products {
+      grid-template-columns: auto auto;
+      grid-column-gap: 1em;
+    }
+  }
+
+  .Quick{
+    position: absolute;
+    background-color: black;
+    border: 1px solid black;
+    color: white;
+    margin-top: -60px;
+    right: 13px;
+    padding: 13px 50px;
+    opacity: 0;
+   
+  }
+  .Quick:hover{
+    opacity: 1;
+    transition: .4s ease;
+  }
+
+  .badge{
+
+    position: absolute;
+    background-color: rgba(96, 64, 238, 0.808);
+    margin-top: -309px;
+    left: 10px;
+    padding: 7px 20px;
+    font-weight: 400;
+    border-radius: 0;
+    font-size: 15px;
+  
+  }
+  
+ */

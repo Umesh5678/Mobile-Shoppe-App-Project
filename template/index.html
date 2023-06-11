@@ -1,0 +1,245 @@
+{% load static %}
+<link rel="stylesheet" href="/static/css/styles.css">
+
+{% include "head.html" %}
+
+
+
+
+
+
+<!-- NavBar -->
+{% include 'nav.html' %}
+
+<style>
+  .overlaybtn a{
+    text-decoration: none;
+    color: white;
+    
+  }
+
+  #badge{
+    position: absolute;
+    margin-top: 20px;
+    padding: 10px 15px;
+    background-color: rgb(235, 51, 165);
+    color: white;
+
+  }
+</style>
+<!--main Container start-->
+<div class="main-container " style="padding-top: 0px;padding: 0px 0px;">
+
+
+<!--courasel-->
+    <!-- slider part -->
+    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="true">
+        <div class="carousel-indicators">
+            {% for car in caurosel %}
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="{{ forloop.counter0 }}"
+              class="{% if forloop.counter == 1 %}active {% endif %}"
+              aria-current="{% if forloop.counter == 1 %} true {% endif %}"></button>
+            {% endfor %}
+        </div>
+        <div class="carousel-inner   ">
+            <div class="couraselTag ">
+                <a href="#">
+                  <h5>MOBILE PHONES & TABLETS REPAIR SERVICES FOR ALL BRANDS - GET A QUOTE </h5>
+                </a>
+            </div>
+            {% for car in caurosel %}
+            <div class="carousel-item {% if forloop.counter == 1 %}active {% endif %}">
+                <img src="/{{  car.caroasel_image }}" class="d-block w-100 " alt="...">
+                <div class="carousel-caption " id="carousel-content">
+                    <h1>{{ car.caroasel_text }}</h1>
+                    <button type="button" class="btn">shop now</button>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+          <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+    <!--  Slider Part End -->
+
+
+
+
+
+
+    <!--mobile phones started-->
+    <div class="mobilephones">
+        <h1>Most Popular<br>
+          Mobile Phones <!--<hr class="hr"> -->
+        </h1>
+        <hr  style="color:rgb(73, 71, 71);border: 2px solid ;
+        width: 60%;
+        margin-left: 40%;
+        margin-top: -40px;
+      ">
+        <div class="container text-center ">
+            <div class="row g-0  ">
+              {% for row in mobile %}
+              {%  if forloop.counter != 4 %}
+                <div class="col " id="mobiles">
+                    <div class="pt-4">
+                      {% if row.product_add_date|date:"Y" > "2022" %}
+                            <span id="badge" class="badge rounded-pill ">New</span>
+                      {% endif %}
+                        <a href="#"><img style="width: 196px; height:261;" src="/{{ row.product_image }}"></a>
+                        <h6 style="text-overflow: ellipsis;padding: 0px 5px; ">{{ row.product_name }}</h6>
+                        <p>${{ row.product_rate }}.00</p>
+                        <div class="overlay1" style="margin-top: -150px;">
+                          <small>Quick View</small>
+                        </div>
+                        <div>
+                            <button type="button" class="overlaybtn"> <a href="/product_details?id={{row.id}}"> Add to Cart</a></button>
+                        </div>
+                    </div>
+                </div>
+                {% endif %}
+                {% endfor %}
+                
+
+                <!-- More Mobile items btn -->
+                <div>
+                  <button type="button" class="moremobile"><a style="text-decoration: none;
+                    color: white;" href="\mobile" >More Mobile Phones</a> </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Mobile Section End -->
+
+
+<style>
+  #badge{
+    position: absolute;
+    margin-top: 20px;
+    padding: 10px 15px;
+    background-color: rgb(235, 51, 165);
+    color: white;
+
+  }
+</style>
+
+    <!--pad secion start-->
+
+    <div class="tablets">
+        <h1>Bestselling<br>
+          Tablets </h1>
+        <hr class="tablet-hr">
+        <div class="container text-center ">
+            <div class="row g-0  ">
+
+              {% for row in tablet %}
+              {%  if forloop.counter != 5 %}
+                <div class="col " id="tablets">
+                    <div class="pt-4   ">
+                      {% if row.product_add_date|date:"Y" > "2022" %}
+                            <span id="badge" class="badge rounded-pill ">New</span>
+                      {% endif %}
+                        <a href="#"><img style="width: 196px; height:261;" src="/{{ row.product_image }}"></a>
+                        <h6 style="text-overflow: ellipsis;padding: 0px 5px; ">{{ row.product_name }}</h6>
+                        <p>${{ row.product_rate }}.00</p>
+                        <div class="overlay1" style="margin-top: -150px;">
+                            <small>Quick View</small>
+                        </div>
+                        <div>
+                          <button type="button" class="overlaybtn"> <a href="/product_details?id={{row.id}}"> Add to Cart</a></button>
+                        </div>
+                    </div>
+                </div>
+                {% endif %}
+              {% endfor %}
+                
+                <!-- More Pads Buttons -->      
+                <div>
+                  <button type="button" class="moremobile"><a style="text-decoration: none;
+                    color: white;" href="\tablet" >More Tablets</a> </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Pad Section End-->
+
+
+
+
+    <!--Accessories Section Start -->
+    <div class="Accessories">
+        <h1>Mobile<br>
+          Accessories </h1>
+        <hr class="Accessories-hr" style="color:rgb(73, 71, 71);">
+
+        <div class="container text-center ">
+            <div class="row g-0  ">
+              {% for row in accessories %}
+              {%  if forloop.counter != 5 %}
+                <div class="col " id="Accessories">
+                    <div class="pt-4   ">
+                      {% if row.product_add_date|date:"Y" > "2022" %}
+                            <span id="badge" class="badge rounded-pill ">New</span>
+                      {% endif %}
+                        <a href="#"><img style="width: 196px; height:261;" src="/{{ row.product_image }}"></a>
+                        <h6 style="text-overflow: ellipsis;padding: 0px 5px; ">{{ row.product_name }}</h6>
+                        <p>${{row.product_rate}}.00</p>
+                        <div class="overlay1" style="margin-top: -150px;">
+                          <small>Quick View</small>
+                        </div>
+                        <div>
+                          <button type="button" class="overlaybtn"> <a href="/product_details?id={{row.id}}"> Add to Cart</a></button>
+                        </div>
+                    </div>
+                </div>
+                {% endif %}
+                {% endfor %}
+                
+                <!-- More Accessories Button -->
+                <div>
+                  <button type="button" class="moremobile"><a style="text-decoration: none;
+                    color: white;" href="\accessories" >More Accessories</a> </button>                </div>
+            </div>
+        </div>
+    </div>
+  
+    <!-- Accessories Section End-->
+
+
+
+
+    <!--Brands Section Starts-->
+    <div class="Brands">
+        <div class="Brands-heading">
+            <h1>Our<br>
+              Brands </h1>
+            <hr class="hr" style="color:rgb(73, 71, 71);">
+        </div>
+        <div class="container text-center">
+            <div class="row row-cols-4  ps-5 pe-5">
+                {% for row in brand %}
+                <div class="col">
+                  <img src="/{{ row.image }}" alt="">
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+
+
+</div>
+  <!--footer-->
+
+  {% include 'footer.html' %}
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+</body>
+
+</html>

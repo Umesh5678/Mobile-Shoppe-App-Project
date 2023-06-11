@@ -1,0 +1,101 @@
+{% load static %}
+<div class="footer" style="padding-top: 50px;">
+
+    <div class="container">
+      <div class="row">
+        <div class="col text-start">
+          
+         <h1>Be the First to Know <br>About Deals and <br>Special Offers</h1>
+        </div>
+        <div class="col text-center" id="subscribe">
+         <form>
+          <input type="email" placeholder="Enter Your email Here*" >
+          <button type="button" class="subscribe-btn"><small>Subscribe Now</small></button>
+         </form>
+        </div>
+      </div>
+    </div>
+  
+    <div class="help-label">
+      <h4>How can we help?</h4>
+      <hr class="hr1" >
+      </div>
+  
+      <div class="container" id="footer">
+        <footer class="row row-cols-4 ">
+          <div class="col ">
+            
+            <ul class="nav flex-column">
+              <li class="nav-item mb-3"><a  class="nav-link  ">Customer Services</a></li>
+              <li class="nav-item mb-3"><a  class="nav-link  ">123-456-7890</a></li>
+              <li class="nav-item mb-3"><a href="#" class="nav-link  ">info@my-domain.com</a></li>
+              <li class="nav-item mb-3"><a  class="nav-link  ">500 Terry Francois Street</a></li>
+              <li class="nav-item mb-3"><a  class="nav-link  ">San Francisco, CA 94158</a></li>
+            </ul>
+          </div>
+      
+          <div class="col ">
+            {% for nav in navbar %}
+            <ul class="nav flex-column">
+              <li class="nav-item mb-3"><a href="/" class="nav-link  ">{{ nav.nav_field_1}}</a></li>
+              <li class="nav-item mb-3"><a href="\mobile" class="nav-link  ">{{ nav.nav_field_2}}</a></li>
+              <li class="nav-item mb-3"><a href="tablet.html" class="nav-link  ">{{ nav.nav_field_3}}</a></li>
+              <li class="nav-item mb-3"><a href="accessories.html" class="nav-link  ">{{ nav.nav_field_4}}</a></li>
+              <li class="nav-item mb-3"><a href="#" class="nav-link  ">{{ nav.nav_field_5}}</a></li>
+              <li class="nav-item mb-3"><a href="\about" class="nav-link  ">{{ nav.nav_field_6}}</a></li>
+            
+            </ul>
+            {% endfor %}
+          </div>
+      
+          <div class="col ">
+            
+            <ul class="nav flex-column">
+              {% for row in services %}
+              <li class="nav-item mb-3"><a href="#" class="nav-link  ">{{ row.services }}</a></li>
+              
+              {% endfor %}
+            </ul>
+          </div>
+      
+          <div class="col ">
+            
+            <ul class="nav flex-column">
+              {% for row in links %}
+              <li class="nav-item mb-3"><a href="#" class="nav-link ">{{ row.link_name }}</a></li>
+              <!-- <li class="nav-item mb-3"><a href="#" class="nav-link ">Instagram</a></li>
+              <li class="nav-item mb-3"><a href="#" class="nav-link ">tweeter</a></li>
+              <li class="nav-item mb-3"><a href="#" class="nav-link ">Youtube</a></li> -->
+              {% endfor %}
+            </ul>
+          </div>
+        </footer>
+      </div>
+  
+  
+  
+  </div>
+
+
+
+
+
+
+  <div class="container" >
+    <footer class="d-flex flex-wrap justify-content-between align-items-center  my-4 ">
+      <div class="col-md-4 d-flex align-items-center">
+        
+        ©2023 by Mahajan Umesh. Proudly created with us.
+      </div>
+  
+      <ul class="nav col-md-4 justify-content-center list-unstyled d-flex">
+        <li class="ms-3"><a class="text-muted" href="#"><img src = "{% static './images/icons/facebook (1).png' %}" alt=""></a></li>
+        <li class="ms-3"><a class="text-muted" href="#"><img src = "{% static './images/icons/instagram (1).png' %}" alt=""></a></li>
+        <li class="ms-3"><a class="text-muted" href="#"><img src = "{% static './images/icons/twitter (1).png' %}" alt=""></a></li>
+        <li class="ms-3"><a class="text-muted" href="#"><img src = "{% static './images/icons/Youtube.png' %}" alt=""></a></li>
+      </ul>
+    </footer>
+  </div>
+  
+  
+  

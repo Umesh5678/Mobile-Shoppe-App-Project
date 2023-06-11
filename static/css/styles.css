@@ -1,0 +1,616 @@
+
+
+
+
+/*caurasel section start*/
+
+.main-container{
+    background-color: rgb(240, 244, 250);
+    
+    
+ 
+}
+
+#carouselExampleCaptions{
+    padding: 40px 100px 0px;
+    
+    
+    
+}
+
+.couraselTag{
+    background-color: rgb(112, 65, 241);
+    
+    color: white;
+    padding: 25px 0px;
+    text-align: center;
+   
+}
+.couraselTag a{
+  text-decoration: none;
+  color: white;
+}
+
+#carousel-content h1{
+    font-size: 67px;
+    font-weight: 900;
+    font-family: 'Ubuntu', sans-serif;
+    
+}
+
+#carousel-content{
+    bottom: 120px;
+    left: 35px;
+    text-align: start;
+    
+}
+
+#carousel-content button{
+   border-radius: 0px;
+    background-color: rgb(156, 37, 253);
+    color: white;
+    padding: 7px 35px;
+    margin-top: 30px;
+
+
+}
+
+#carousel-content button:hover{
+    background-color: black;
+    color: white;
+}
+
+
+
+/*mobile phone section start*/
+
+.mobilephones{
+    margin-top: 40px;
+    
+    padding: 0px 100px;
+   
+}
+
+
+
+.mobilephones h1{
+    font-size: 50px;
+    font-weight: 900;
+    color: black;
+    margin-bottom: 20px;
+    font-family: 'Kanit', sans-serif;
+}
+.mobile-hr{
+  border: 2px solid ;
+  width: 60%;
+  margin-left: 40%;
+  margin-top: -40px;
+}
+
+/*
+.hr{
+    background-color: none;
+    border: 2px solid black;
+    color: black;
+    max-width: 500px;
+    margin-left: 45%;
+    top: 30px;
+
+}
+*/
+
+
+#mobiles:hover .overlay1{
+    opacity: 1;
+    
+    
+  }
+  
+  .overlay1 {
+    position: absolute; 
+    background: rgb(8, 8, 8);
+     /* Black see-through */
+    color: #f1f1f1;
+  
+    padding: 10px 82px;
+    transition:.4s ease;
+    
+    opacity:0;
+    color: white;
+   
+    
+    text-align: center;
+  }
+
+  
+  
+
+
+
+
+
+  #mobiles:hover .overlaybtn{
+    opacity: 1;
+    
+    
+    
+  }
+  
+  .overlaybtn {
+    background: rgb(146, 36, 209);
+     /* Black see-through */
+    color: white;
+    border: 0px solid rgb(146, 36, 209);
+    justify-items: center;
+    padding: 6px 37px;
+    transition:.4s ease;
+    opacity:0;
+    color: white;
+ 
+  }
+  
+  .overlaybtn:hover{
+    background-color: rgb(125, 107, 204);
+    color: rgb(226, 220, 220);
+  }
+  
+
+  .moremobile{
+    background-color:rgb(146, 36, 209) ;
+    color: white;
+    border: 0px solid rgb(146, 36, 209);
+    padding: 12px 25px;
+    font-size: small;
+    margin-top: 50px;
+  }
+  
+  .moremobile:hover{
+    background-color: black;
+    color: white;
+    transition: .6s;
+  }
+
+
+
+  /*Tablets section */
+
+  .tablets{
+    margin-top: 40px;
+    padding: 0px 100px;
+   
+}
+
+.tablets h1{
+    font-size: 50px;
+    font-weight: 900;
+    color: black;
+    margin-bottom: 20px;
+    font-family: 'Kanit', sans-serif;
+}
+
+#tablets:hover .overlay1{
+    opacity: 1;
+    
+    
+  }
+  .tablet-hr{
+    border: 2px solid  ;
+    width: 80%;
+    margin-left: 20%;
+    margin-top: -40px;
+    
+    
+  }
+  
+  .overlay1 {
+    position: absolute; 
+    
+    background: rgb(8, 8, 8);
+     /* Black see-through */
+    color: #f1f1f1;
+    
+    margin-top: -120px;
+    padding: 10px 82px;
+    transition:.4s ease;
+    
+    opacity:0;
+    color: white;
+   
+    
+    text-align: center;
+  }
+
+  #tablets:hover .overlaybtn{
+    opacity: 1;
+    
+    
+  }
+
+
+  .moretablet{
+    background-color:rgb(146, 36, 209) ;
+    color: white;
+    border: 0px solid rgb(146, 36, 209);
+    padding: 12px 35px;
+    font-size: small;
+    margin-top: 50px;
+  }
+  .moretablet:hover{
+    background-color: black;
+    color: white;
+    transition: .6s;
+  }
+
+
+  /* accessories section starts*/
+
+  .Accessories{
+    margin-top: 40px;
+    padding: 0px 100px;
+   
+}
+
+.Accessories h1{
+    font-size: 50px;
+    font-weight: 900;
+    color: black;
+    margin-bottom: 20px;
+    font-family: 'Kanit', sans-serif;
+}
+
+.Accessories-hr{
+  border: 2px solid ;
+  width: 67%;
+  margin-left: 33%;
+  margin-top: -40px;
+  
+}
+
+#Accessories:hover .overlay1{
+    opacity: 1;
+    
+    
+  }
+
+ 
+  
+  .overlay1 {
+    position: absolute; 
+    
+    background: rgb(8, 8, 8);
+     /* Black see-through */
+    color: #f1f1f1;
+    
+    margin-top: -120px;
+    padding: 10px 82px;
+    transition:.4s ease;
+    
+    opacity:0;
+    color: white;
+   
+    
+    text-align: center;
+  }
+
+  #Accessories:hover .overlaybtn{
+    opacity: 1;
+    
+    
+  }
+
+
+  .moretablet{
+    background-color:rgb(146, 36, 209) ;
+    color: white;
+    border: 0px solid rgb(146, 36, 209);
+    padding: 12px 35px;
+    font-size: small;
+    margin-top: 50px;
+  }
+  .moretablet:hover{
+    background-color: black;
+    color: white;
+    transition: .6s;
+  }
+
+
+
+
+  /*Brands section*/
+
+  .Brands-heading{
+    margin-top: 40px;
+    padding: 0px 100px;
+   
+}
+.hr{
+  border: 2px solid  ;
+  width: 70%;
+  float: right;
+  margin-top: -70px;
+  margin-right: 30px;
+  
+}
+
+.Brands-heading h1{
+    font-size: 50px;
+    font-weight: 900;
+    color: grey;
+    margin-bottom: 50px;
+    font-family: 'Kanit', sans-serif;
+}
+
+.Brands{
+  background-color: rgb(233, 230, 230);
+  padding: 50px 0px 70px ;
+  margin-top: 70px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*pop up*/
+
+
+.productl-img{
+    
+  width: 360px;
+  height: 500px;
+}
+
+#productl{
+  justify-content: center;
+  text-align: center;
+  
+}
+#productr{
+  padding: 40px;
+}
+
+.cartbtn{
+  margin-top: 50px;
+  width: 100%;
+  padding: 9px ;
+  margin-bottom: 10px;
+
+  background: rgb(146, 36, 209);
+   /* Black see-through */
+  color: white;
+  border: 0px solid rgb(146, 36, 209);
+  
+  
+  transition:.4s ease;
+  
+  color: white;
+
+
+}
+
+.cartbtn:hover{
+  background-color: rgb(125, 107, 204);
+  color: rgb(226, 220, 220);
+}
+
+#veiwes{
+  color: black;
+}
+
+
+
+
+
+
+
+
+
+
+/*     adding css    */
+
+
+/* <style> */
+
+.open-button {
+  background-color: rgb(156, 37, 253);
+  color: white;
+  padding: 15px 0px;
+  border: none;
+  cursor: pointer;
+  
+  position: fixed;
+  bottom: 0px;
+  right: 6px;
+  width: 180px;
+}
+
+/* The popup chat - hidden by default */
+.chat-popup {
+  display: none;
+  position: fixed;
+  bottom: 0;
+  right: 15px;
+  border: 0px ;
+  z-index: 9;
+}
+
+/* Add styles to the form container */
+.form-container {
+  max-width: 350px;
+  
+  background-color: white;
+}
+
+/* Full-width textarea */
+.form-container textarea {
+  width: 100%;
+  padding: 10px;
+  margin: 5px 0 22px 0;
+  border: none;
+  
+  resize: none;
+  min-height: 200px;
+}
+
+/* When the textarea gets focus, do something */
+.form-container textarea:focus {
+ 
+  outline: none;
+}
+
+/* Set a style for the submit/send button */
+.form-container .btn {
+  background-color: rgb(57, 244, 32);
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  margin-bottom:10px;
+  opacity: 0.8;
+}
+
+/* Add a red background color to the cancel button */
+.form-container .cancel {
+  background-color: red;
+}
+
+/* Add some hover effects to buttons */
+.form-container .btn:hover {
+  opacity: 1;
+}
+
+.form-navbar{
+  background-color: rgb(112, 65, 241);
+  color: white;
+  padding: 10px 10px;
+}
+.form-navbar h6{
+  font-weight: 800;
+  font-size: 18px;
+}
+/* </style> */
+    
+
+
+/* <style> */
+  .sidenav {
+  height: 100%;
+  width: 0px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  background-color: white;
+  overflow-x: hidden;
+  transition: 0.5s;
+  
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 16px;
+  text-decoration: none;
+  font-size: 25px;
+  color: white;
+  display: block;
+  transition: 0.5s;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  left: 0px;
+  font-size: 36px;
+  margin-right: 0px;
+}
+
+#main {
+  transition: margin-left .5s;
+  padding: 16px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+.cart-nav{
+  height: 90px;
+  background-color: black;
+  color: white;
+}
+.cart-nav h3{
+  text-align: center;
+  padding-top: 20px;
+  font-weight: 200;
+  
+}
+
+
+/* </style> */
+
+
+/* <!--style for popup--> */
+/* <style> */
+  
+
+.productl-img{
+    
+    width: 360px;
+    height: 500px;
+  }
+  
+  #productl{
+    justify-content: center;
+    text-align: center;
+    
+  }
+  #productr{
+    padding: 40px;
+  }
+  
+  .cartbtn{
+    margin-top: 50px;
+    width: 100%;
+    padding: 9px ;
+    margin-bottom: 10px;
+  
+    background: rgb(146, 36, 209);
+     /* Black see-through */
+    color: white;
+    border: 0px solid rgb(146, 36, 209);
+    
+    
+    transition:.4s ease;
+    
+    color: white;
+  
+  
+  }
+  
+  .cartbtn:hover{
+    background-color: rgb(125, 107, 204);
+    color: rgb(226, 220, 220);
+  }
+  
+  #veiwes{
+    color: black;
+  }
+  
+  /* </style> */
+  
+  
+  
+  
+  

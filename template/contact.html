@@ -1,0 +1,89 @@
+{% load static %}
+
+{% include "head.html" %}
+ 
+
+
+<!--Navbar-->
+{% include "nav.html" %}
+<!-- {% if msg %}
+<h3 style="text-align: center;">{{msg}}</h3>
+{% endif %} -->
+<!--main container start-->
+
+<div class="main-container " style="padding-top: 100px;">
+    <div class="contact">
+        <h1>Contact <!--<hr class="hr"> --> </h1>
+        <hr class="contact-hr" style="color:rgb(73, 71, 71);">
+        <form action="/save_response/" method="post">
+            {% csrf_token %}
+        <div class="container text-center pt-3">
+            <!-- Stack the columns on mobile by making one full-width and the other half-width -->
+            <div class="row  pt-5  ">
+                <div class=" col-sm-3 text-start ps-0">
+                    <h5> For a Quote or for <br>
+                      Any Other Questions, <br>
+                      Get in Touch
+                    </h5>
+                </div>
+                
+                <div class="col-sm-9">
+                    <div class="row p-1">
+                        <div class="col">
+                            <input type="text" class="form-control" id="input-name" name="name" placeholder="Name" aria-label="First name">
+                        </div>
+                        <div class="col">
+                          <input type="mail" class="form-control" id="input-mail" name="email" placeholder="Email" aria-label="email">
+                        </div>
+                    </div>
+                    <div class="mb-3 pt-4  text-start">
+                        <textarea class="form-control" id="text-area" rows="5" name="msg" placeholder="Type your message here..."></textarea>
+                    </div>
+
+                    <button type="submit" class="submitbtn"  background-color: rgb(240, 244, 250);>
+                    <h3>Submit</h3>
+                    </button>
+                    
+                </div>
+                
+                <div class=" col-sm-3 pt-5 text-start ps-0">
+                    <h5> Our Store</h5>
+                </div>
+                {% for row in contact_info %}
+                <div class="col-sm-9 pt-5 ">
+                    <div class="row">
+                        <div class="col text-start" style="font-size: 14px;">
+                            <p>{{ row.address }}</p>
+                            <p><a href="tel:{{ row.tel_no }}"></a>{{ row.tel_no }}</p>
+                            <a href="mailto:{{ row.info_link }}" style="text-decoration: none; color:black;">{{ row.info_link }}</a>
+                            </p>
+                        </div>
+                        <div class="col ">
+                          <h5>Opening Hours</h5>
+                        </div>
+                        <div class="col text-start" style="font-size: 14px;">
+                          {{ row.opening_hours }}
+                        </div>
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+        </form>
+        <div class="map">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3854629.080102952!2d71.00762200000003!3d19.356756!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bdb69e98c295033%3A0xe08cc285582ea7b8!2sVishal%20Associates%20Mobile%20gallary!5e0!3m2!1sen!2sin!4v1667408808488!5m2!1sen!2sin"
+              width="90%" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </div>
+</div>
+
+
+<!--footer-->
+{% include 'footer.html' %}
+
+
+
+
+</body>

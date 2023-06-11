@@ -1,0 +1,52 @@
+
+
+body{
+    background-color: white;
+    padding: 0px 100px 0px 100px;
+    
+}
+
+
+
+.navbar{
+    background-color: white;
+    
+    
+    
+}
+#navbar-top{
+    padding: 20px 100px;
+    justify-content: center;
+    
+}
+#login-icon{
+    margin-left: 0px;
+    color: blue;
+}
+
+.nav-link{
+    font-size: small;
+}
+#navbarSupportedContent ul li a:hover{
+  color: blue;
+  transition: .3s;
+}
+
+.navbar-brand:hover{
+  color: blue;
+  transition: .5s ;
+}
+
+#navbar-top img{
+    width: 25px;
+}
+
+#active-nav{
+  color: rgb(47, 47, 199);
+  
+}
+
+.main-container{
+    background-color: rgb(240, 244, 250);
+    
+}

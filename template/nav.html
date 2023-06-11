@@ -1,0 +1,70 @@
+{% load static %}
+
+
+<!--Navbar-->
+{% if msg %}
+<p>Done</p>
+{% endif %}
+{% for nav in navbar %}
+<nav class="navbar navbar-expand-lg  " >
+    <div class="container-fluid " id="navbar-top">
+      <a class="navbar-brand pe-2 pb-2 active" href="#"><h3>{{ nav.sitelogo }}</h3></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0 justify-content-center ">
+          <li class="nav-item pe-3 ps-4 ">
+            <a class="nav-link  active" id="active-nav" aria-current="page" href="/">{{ nav.nav_field_1 }}</a>
+          </li>
+          <li class="nav-item pe-2 " >
+            <a class="nav-link active" href="\shopall">{{ nav.nav_field_2 }}</a>
+          </li>
+          <li class="nav-item pe-2 ">
+            <a class="nav-link active" href="\mobile">{{ nav.nav_field_3 }}</a>
+          </li>
+          <li class="nav-item  pe-2">
+            <a class="nav-link active" href="\tablet">{{ nav.nav_field_4 }}</a>
+          </li>
+          <li class="nav-item pe-2 ">
+            <a class="nav-link active" href="\accessories">{{ nav.nav_field_5 }}</a>
+          </li>
+          <li class="nav-item pe-2 ">
+            <a class="nav-link active" href="\about">{{ nav.nav_field_6 }}</a>
+          </li>
+          <li class="nav-item pe-4 ">
+            <a class="nav-link active" href="\contact">{{ nav.nav_field_7 }}</a>
+          </li>
+          
+          <li class="nav-item   " id="login-icon">  
+            
+            <a class="nav-link" href="\login"> <img src="/{{  nav.login_icon }}" alt=""></a>
+            
+          </li>                
+          
+          <li class="nav-item pe-3  " >
+            
+            <a class="nav-link active" id="active-nav"  href="\login">Log in </a>
+            
+
+            <!-- {% if user %}
+            <a class="nav-link active" id="active-nav"  href="\logout">   Log out </a>
+
+            {% else %} -->
+            <!-- {% endif %} -->
+
+          </li>
+      
+          <li class="nav-item  " >
+
+            <!--cart-->
+            <a class="nav-link" href="\cart" > <img src="/{{  nav.cart_icon }}" alt=""></a>
+
+          </li>
+          
+        </ul>
+        
+      </div>
+    </div>
+  </nav>
+  {% endfor %}

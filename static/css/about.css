@@ -1,0 +1,37 @@
+
+
+
+
+
+/*About us*/
+
+.about{
+    
+    
+    padding: 0px 100px;
+   
+}
+
+.about h1{
+    font-size: 55px;
+    font-weight: 900;
+    color: black;
+    margin-bottom: 20px;
+    font-family: 'Kanit', sans-serif;
+
+}
+.about-hr{
+  border: 2px solid ;
+  width: 70%;
+  margin-left: 30%;
+  margin-top: -40px;
+}
+
+
+
+
+
+
+
+
+

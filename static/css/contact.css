@@ -1,0 +1,104 @@
+
+
+
+/*contact form section*/
+
+.contact{
+    
+    
+    padding: 0px 100px;
+   
+}
+
+.contact h1{
+    font-size: 55px;
+    font-weight: 900;
+    color: black;
+    margin-bottom: 20px;
+    font-family: 'Kanit', sans-serif;
+
+}
+.contact-hr{
+  border: 2px solid ;
+  width: 75%;
+  margin-left: 25%;
+  margin-top: -40px;
+}
+
+
+#input-name{
+    width: 325px;
+    border-color: black;
+    border-radius: 0px;
+    border-width: 0px 0px 1px 0px;
+    background-color: rgb(240, 244, 250);
+    font-size: 14px;
+    padding-bottom: 10px;
+    
+}
+
+#input-name:hover{
+    border-width: 0px 0px 2px 0px;
+    
+    
+}
+
+
+
+#input-mail{
+    width: 325px;
+    border-color: black;
+    border-radius: 0px;
+    border-width: 0px 0px 1px 0px;
+    background-color: rgb(240, 244, 250);
+    font-size: 14px;
+    padding-bottom: 10px;
+}
+
+#input-mail:hover{
+    border-width: 0px 0px 2px 0px;
+    
+    
+}
+
+#text-area{
+    
+    border-color: black;
+    border-radius: 0px;
+    border-width: 0px 0px 1px 0px;
+    background-color: rgb(240, 244, 250);
+    font-size: 14px;
+
+}
+
+#input-text-area:hover{
+    border-width: 0px 0px 2px 0px;
+    
+    
+}
+
+form h5{
+    font-weight: 900;
+    font-size: 19px;
+}
+
+.submitbtn{
+    border: none;
+    color: black;
+    margin-bottom: 40px;
+    
+    
+}
+
+.submitbtn:hover{
+    color: rgb(47, 47, 199) ;
+    transition: .5s ease-out;
+}
+
+/*map*/
+
+.map iframe{
+    margin: 8% 5%;
+}
+
+

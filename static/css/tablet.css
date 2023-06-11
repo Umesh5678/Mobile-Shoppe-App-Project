@@ -1,0 +1,99 @@
+
+
+/*tablets section start*/
+
+.tablet{
+    
+    
+    padding: 0px 100px;
+   
+}
+
+
+
+.tablet h1{
+    font-size: 50px;
+    font-weight: 900;
+    color: black;
+    margin-bottom: 20px;
+    font-family: 'Kanit', sans-serif;
+}
+.tablet-hr{
+  border: 2px solid ;
+  width: 80%;
+  margin-left: 20%;
+  margin-top: -40px;
+}
+
+
+
+  /*accordion body*/
+
+
+ 
+  .accordion {
+    width: 240px;
+    
+    color: black;
+    background-color: none;
+    
+    
+  }
+  
+  
+  
+  .accordion .label {
+    position: relative;
+    padding-bottom: 10px;
+    font-size: 16px;
+    color: black;
+    cursor: pointer;
+    text-align: start;
+  }
+
+  
+  
+  .accordion .label::before {
+    content: '+';
+    color: black;
+    position: absolute;
+    top: 50%;
+    right: -5px;
+    font-size: 30px;
+    transform: translateY(-50%);
+  }
+  
+  .accordion .content {
+    
+    background: none;
+    height: 0;
+    font-size: 15px;
+    text-align: start;
+    width: 230px;
+    overflow: hidden;
+    transition: 0.5s;
+  }
+
+  .accordion .content ul li {
+    margin-bottom: 10px;
+    margin-left: -30px;
+
+  }
+  
+  
+  
+  .accordion .container.active .content {
+    height: 150px;
+  }
+  
+  .accordion .container.active .label::before {
+    content: '-';
+    font-size: 30px;
+  }
+
+  .button-value{
+    border: none;
+    background: none;
+  }
+  
+ 
